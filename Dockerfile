@@ -1,7 +1,7 @@
 FROM golang:alpine AS build-env
 ADD . /src/github.com/RobbieMcKinstry/personal-website
 ENV GOPATH=/
-RUN cd /src/github.com/RobbieMcKinstry/personal-website && go build -o /bin/server
+RUN cd /src/github.com/RobbieMcKinstry/personal-website && go get -d ./... && go build -o /bin/server
 
 # final stage
 FROM alpine

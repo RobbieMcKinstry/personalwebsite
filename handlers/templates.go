@@ -33,7 +33,9 @@ func init() {
 	for _, file := range include {
 		fileName := filepath.Base(file)
 		files := append(layout, file)
-		res, err := template.New(fileName).ParseFiles(files...)
+		res, err := template.New(fileName).
+			Funcs(template.FuncMap{"markdown": markdownTemplater}).
+			ParseFiles(files...)
 		if err != nil {
 			log.Fatal(err)
 		}
