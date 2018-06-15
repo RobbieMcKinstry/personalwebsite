@@ -14,7 +14,7 @@ const PORT = 8080
 
 func main() {
 	http.Handle("/static/", handlers.Static())
-	http.HandleFunc("/", indexHandler)
+	http.HandleFunc("/", handlers.IndexHandler)
 
 	launchServer()
 	wait()
@@ -33,8 +33,4 @@ func wait() {
 	signal.Notify(interrupt, os.Interrupt)
 	s := <-interrupt
 	fmt.Println("Caught interrupt signal:", s)
-}
-
-func indexHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 }

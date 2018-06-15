@@ -8,5 +8,6 @@ FROM alpine
 WORKDIR /app
 COPY --from=build-env /bin/server /app/
 COPY ./static /app/static
+COPY ./templates /app/templates
 EXPOSE 8080
 ENTRYPOINT ["./server"]
