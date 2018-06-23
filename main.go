@@ -14,7 +14,11 @@ const PORT = 8080
 
 func main() {
 	http.Handle("/static/", handlers.Static())
-	http.HandleFunc("/about/", handlers.AboutMeHandler)
+
+	http.HandleFunc("/research", handlers.ResearchHandler)
+	http.HandleFunc("/engineering", handlers.EngineeringHandler)
+	http.HandleFunc("/teaching", handlers.TeachingHandler)
+
 	http.HandleFunc("/", handlers.IndexHandler)
 
 	launchServer()

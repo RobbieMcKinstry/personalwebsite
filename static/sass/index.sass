@@ -1,38 +1,52 @@
 $header-font: 'Oswald', sans-serif
 $body-font: 'Roboto', sans-serif
 $code-font: 'VT323', monospace
+$soft-black: #3b444b
+$light-white: #F0F8FF
+$white-blue: #d0fcff
 
 .container-fluid
   padding-right: 0%
   padding-left: 0%
 
-.hero-wrapper
-  background-image: url("/static/images/wedding-cropped.jpg")
+.index
+  .hero-wrapper
+    background-image: url("/static/images/wedding-cropped.jpg")
+    height: 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+   
+    .hero-text
+      text-align: center
+      position: absolute
+      top: 50%
+      left: 15%
+      color: $light-white
+      transform: translate(-50%, -50%)
+      background-color: $soft-black
+      padding-top: 2.5%
+      padding-bottom: 2.5%
+      padding-left: 1.0%
+      padding-right: 1.0%
 
-  /* Set a specific height */
-  height: 100%
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  position: relative
-
-  .hero-text
-    text-align: center
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    color: white
-
-.body-text
-  text-align: left
-  left: 20%
-
+a
+  color: $light-white    
+a:link
+  text-decoration: none
+  color: $light-white
+a:hover
+  text-decoration: underline
+  color: $light-white
 
 h1
   font-family: $header-font
+  font-size: 1.5em
+
+h2
+  font-family: $header-font
+  font-size: 1.2em
 
 p
   font-family: $body-font
@@ -40,6 +54,3 @@ p
 code
   font-family: $code-font
 
-.profile-image
-  margin-left: 0%
-  margin-right: 5%

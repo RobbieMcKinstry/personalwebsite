@@ -9,6 +9,18 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "index.tmpl", nil)
 }
 
+func ResearchHandler(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "research.tmpl", nil)
+}
+
+func EngineeringHandler(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "engineering.tmpl", nil)
+}
+
+func TeachingHandler(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "teaching.tmpl", nil)
+}
+
 func AboutMeHandler(w http.ResponseWriter, r *http.Request) {
 	var title = "About Me"
 	renderMarkdown(w, r, title, garbage)
