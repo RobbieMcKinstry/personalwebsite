@@ -10,15 +10,15 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func ResearchHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "research.tmpl", nil)
+	RenderMarkdown(w, r, "Research | R McKinstry", "research.md")
 }
 
 func EngineeringHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "engineering.tmpl", nil)
+	RenderMarkdown(w, r, "Engineering | R McKinstry", "engineering.md")
 }
 
 func TeachingHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "teaching.tmpl", nil)
+	RenderMarkdown(w, r, "Teaching | R McKinstry", "teaching.md")
 }
 
 func AboutMeHandler(w http.ResponseWriter, r *http.Request) {

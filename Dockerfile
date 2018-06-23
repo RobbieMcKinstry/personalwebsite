@@ -9,7 +9,6 @@ RUN cd /src/github.com/RobbieMcKinstry/personal-website && go get -d ./... && go
 FROM alpine
 WORKDIR /app
 COPY --from=build-env /bin/server /app/
-COPY ./static /app/static
-COPY ./templates /app/templates
+COPY . /app/
 EXPOSE 8080
 ENTRYPOINT ["./server"]
