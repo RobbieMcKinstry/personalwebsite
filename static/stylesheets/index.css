@@ -58,11 +58,23 @@ h2 {
 }
 
 /* line 51, ../sass/index.sass */
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+}
+
+/* line 55, ../sass/index.sass */
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9em;
+}
+
+/* line 59, ../sass/index.sass */
 p {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 54, ../sass/index.sass */
+/* line 62, ../sass/index.sass */
 code {
   font-family: "VT323", monospace;
 }
