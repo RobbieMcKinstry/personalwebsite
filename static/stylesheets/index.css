@@ -29,52 +29,83 @@
 }
 
 /* line 34, ../sass/index.sass */
+.markdown {
+  padding-top: 1em;
+  font-size: 100%;
+  line-height: 2;
+  font-family: "Roboto", sans-serif;
+  max-width: 62.5em;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  column-width: 25em;
+  column-gap: 5em;
+  /*.markdown::after
+   * content: " "
+   * position: absolute
+   * top: 0
+   * right: 0
+   * bottom: 0
+   * left: 0
+   * transform: translateZ(-1px) scale(1.5)
+   * background-size: 100%
+   * z-index: -1
+   * background-image: url('https://placekitten.com/g/900/700') */
+}
+@media screen and (max-width: 25em) {
+  /* line 34, ../sass/index.sass */
+  .markdown {
+    font-size: 90%;
+  }
+}
+
+/* line 61, ../sass/index.sass */
 a {
   color: #F0F8FF;
 }
 
-/* line 36, ../sass/index.sass */
+/* line 64, ../sass/index.sass */
 a:link {
   text-decoration: none;
   color: #F0F8FF;
 }
 
-/* line 39, ../sass/index.sass */
+/* line 68, ../sass/index.sass */
 a:hover {
   text-decoration: underline;
   color: #F0F8FF;
 }
 
-/* line 43, ../sass/index.sass */
+/* line 72, ../sass/index.sass */
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
+  font-size: 2.747em;
 }
 
-/* line 47, ../sass/index.sass */
+/* line 76, ../sass/index.sass */
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
 }
 
-/* line 51, ../sass/index.sass */
+/* line 80, ../sass/index.sass */
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
 }
 
-/* line 55, ../sass/index.sass */
+/* line 84, ../sass/index.sass */
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 59, ../sass/index.sass */
+/* line 88, ../sass/index.sass */
 p {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 62, ../sass/index.sass */
+/* line 91, ../sass/index.sass */
 code {
   font-family: "VT323", monospace;
 }
