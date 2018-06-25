@@ -4,6 +4,7 @@ $code-font: 'VT323', monospace
 $soft-black: #3b444b
 $light-white: #F0F8FF
 $white-blue: #d0fcff
+$soft-paper: #f9f8f2
 
 .container-fluid
   padding-right: 0%
@@ -42,6 +43,19 @@ $white-blue: #d0fcff
   padding-right: 1em
   column-width:  25em
   column-gap:    5em
+  color: $soft-black
+  background-color: $soft-paper
+
+  a
+    color: $soft-black
+
+  a:link
+    text-decoration: underline
+    color: $soft-black
+
+  a:hover
+    text-decoration: underline wavy $soft-black
+    color: $soft-black
 
   @media screen and (max-width: 25em)
     font-size: 90%
@@ -90,4 +104,5 @@ p
 
 code
   font-family: $code-font
+  font-size: 140%
 
