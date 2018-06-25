@@ -1,6 +1,10 @@
 {{define "title"}}{{.Title}} {{end}}
 {{define "content"}}
-<div class="markdown">
-  {{.Body | markdown}}
+  <div class="markdown-wrapper title-{{.Title}}">
+  <div class="background">
+  </div>
+  <div class="markdown">
+    {{.Body | markdown}}
+  </div>
 </div>
 {{end}}

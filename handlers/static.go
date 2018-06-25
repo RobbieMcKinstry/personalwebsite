@@ -16,5 +16,9 @@ func Static() http.Handler {
 func fsHandler(dirName string) http.Handler {
 	fs := http.FileServer(http.Dir(dirName))
 	path := fmt.Sprintf("/%s/", dirName)
-	return http.StripPrefix(path, fs)
+	var handler http.HandlerFunc = func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Cache-Control", "max-age=3600")
+		http.StripPrefix(path, fs).ServeHTTP(w, r)
+	}
+	return handler
 }

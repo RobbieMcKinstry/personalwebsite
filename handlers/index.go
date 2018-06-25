@@ -10,15 +10,15 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func ResearchHandler(w http.ResponseWriter, r *http.Request) {
-	RenderMarkdown(w, r, "Research | R McKinstry", "research.md")
+	RenderMarkdown(w, r, "Research", "research.md")
 }
 
 func EngineeringHandler(w http.ResponseWriter, r *http.Request) {
-	RenderMarkdown(w, r, "Engineering | R McKinstry", "engineering.md")
+	RenderMarkdown(w, r, "Engineering", "engineering.md")
 }
 
 func TeachingHandler(w http.ResponseWriter, r *http.Request) {
-	RenderMarkdown(w, r, "Teaching | R McKinstry", "teaching.md")
+	RenderMarkdown(w, r, "Teaching", "teaching.md")
 }
 
 func AboutMeHandler(w http.ResponseWriter, r *http.Request) {
