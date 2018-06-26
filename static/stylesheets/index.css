@@ -1,10 +1,10 @@
-/* line 15, ../sass/index.sass */
+/* line 17, ../sass/index.sass */
 .container-fluid {
   padding-right: 0%;
   padding-left: 0%;
 }
 
-/* line 20, ../sass/index.sass */
+/* line 22, ../sass/index.sass */
 .index .hero-wrapper {
   background-image: url("/static/images/wedding-cropped.jpg");
   height: 100%;
@@ -13,7 +13,7 @@
   background-size: cover;
   position: relative;
 }
-/* line 28, ../sass/index.sass */
+/* line 30, ../sass/index.sass */
 .index .hero-wrapper .hero-text {
   text-align: center;
   position: absolute;
@@ -27,27 +27,27 @@
   padding-left: 1%;
   padding-right: 1%;
 }
-/* line 40, ../sass/index.sass */
+/* line 43, ../sass/index.sass */
 .index a {
   color: #F0F8FF;
 }
-/* line 43, ../sass/index.sass */
+/* line 46, ../sass/index.sass */
 .index a:link {
   text-decoration: none;
   color: #F0F8FF;
 }
-/* line 47, ../sass/index.sass */
+/* line 50, ../sass/index.sass */
 .index a:hover {
   text-decoration: underline;
   color: #F0F8FF;
 }
 
-/* line 52, ../sass/index.sass */
+/* line 55, ../sass/index.sass */
 .contact h1 {
   text-align: center;
 }
 
-/* line 55, ../sass/index.sass */
+/* line 58, ../sass/index.sass */
 .markdown-wrapper {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -57,7 +57,7 @@
   position: relative;
 }
 
-/* line 64, ../sass/index.sass */
+/* line 67, ../sass/index.sass */
 .title-Research .background {
   top: 0;
   left: 0;
@@ -75,7 +75,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 78, ../sass/index.sass */
+/* line 81, ../sass/index.sass */
 .title-Research .markdown {
   top: 1em;
   left: 0;
@@ -95,28 +95,56 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 93, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .title-Research .markdown a {
   color: #3b444b;
 }
-/* line 96, ../sass/index.sass */
+/* line 99, ../sass/index.sass */
 .title-Research .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 100, ../sass/index.sass */
+/* line 103, ../sass/index.sass */
 .title-Research .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 78, ../sass/index.sass */
+  /* line 81, ../sass/index.sass */
   .title-Research .markdown {
     font-size: 90%;
   }
 }
+/* line 110, ../sass/index.sass */
+.title-Research .markdown .navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFDFC2;
+  margin-bottom: 1em;
+  color: #3b444b;
+  font-family: "Oswald", sans-serif;
+}
+/* line 118, ../sass/index.sass */
+.title-Research .markdown .navbar a {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 122, ../sass/index.sass */
+.title-Research .markdown .navbar a:link {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 126, ../sass/index.sass */
+.title-Research .markdown .navbar a:hover {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
 
-/* line 64, ../sass/index.sass */
+/* line 67, ../sass/index.sass */
 .title-Engineering .background {
   top: 0;
   left: 0;
@@ -134,7 +162,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 78, ../sass/index.sass */
+/* line 81, ../sass/index.sass */
 .title-Engineering .markdown {
   top: 1em;
   left: 0;
@@ -154,28 +182,56 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 93, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .title-Engineering .markdown a {
   color: #3b444b;
 }
-/* line 96, ../sass/index.sass */
+/* line 99, ../sass/index.sass */
 .title-Engineering .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 100, ../sass/index.sass */
+/* line 103, ../sass/index.sass */
 .title-Engineering .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 78, ../sass/index.sass */
+  /* line 81, ../sass/index.sass */
   .title-Engineering .markdown {
     font-size: 90%;
   }
 }
+/* line 110, ../sass/index.sass */
+.title-Engineering .markdown .navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFDFC2;
+  margin-bottom: 1em;
+  color: #3b444b;
+  font-family: "Oswald", sans-serif;
+}
+/* line 118, ../sass/index.sass */
+.title-Engineering .markdown .navbar a {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 122, ../sass/index.sass */
+.title-Engineering .markdown .navbar a:link {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 126, ../sass/index.sass */
+.title-Engineering .markdown .navbar a:hover {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
 
-/* line 64, ../sass/index.sass */
+/* line 67, ../sass/index.sass */
 .title-Teaching .background {
   top: 0;
   left: 0;
@@ -193,7 +249,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 78, ../sass/index.sass */
+/* line 81, ../sass/index.sass */
 .title-Teaching .markdown {
   top: 1em;
   left: 0;
@@ -213,57 +269,172 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 93, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .title-Teaching .markdown a {
   color: #3b444b;
 }
-/* line 96, ../sass/index.sass */
+/* line 99, ../sass/index.sass */
 .title-Teaching .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 100, ../sass/index.sass */
+/* line 103, ../sass/index.sass */
 .title-Teaching .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 78, ../sass/index.sass */
+  /* line 81, ../sass/index.sass */
   .title-Teaching .markdown {
     font-size: 90%;
   }
 }
+/* line 110, ../sass/index.sass */
+.title-Teaching .markdown .navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFDFC2;
+  margin-bottom: 1em;
+  color: #3b444b;
+  font-family: "Oswald", sans-serif;
+}
+/* line 118, ../sass/index.sass */
+.title-Teaching .markdown .navbar a {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 122, ../sass/index.sass */
+.title-Teaching .markdown .navbar a:link {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 126, ../sass/index.sass */
+.title-Teaching .markdown .navbar a:hover {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
 
-/* line 116, ../sass/index.sass */
+/* line 67, ../sass/index.sass */
+.title-Other .background {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/static/images/beach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex: 1 0 auto;
+  position: absolute;
+  height: 103%;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  max-width: 100%;
+}
+/* line 81, ../sass/index.sass */
+.title-Other .markdown {
+  top: 1em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-indent: 2em;
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 1em;
+  padding: 1em;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  max-width: 50em;
+  margin: auto;
+  color: #3b444b;
+  background-color: #f9f8f2;
+}
+/* line 96, ../sass/index.sass */
+.title-Other .markdown a {
+  color: #3b444b;
+}
+/* line 99, ../sass/index.sass */
+.title-Other .markdown a:link {
+  text-decoration: underline;
+  color: #3b444b;
+}
+/* line 103, ../sass/index.sass */
+.title-Other .markdown a:hover {
+  text-decoration: underline wavy #3b444b;
+  color: #3b444b;
+}
+@media screen and (max-width: 25em) {
+  /* line 81, ../sass/index.sass */
+  .title-Other .markdown {
+    font-size: 90%;
+  }
+}
+/* line 110, ../sass/index.sass */
+.title-Other .markdown .navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFDFC2;
+  margin-bottom: 1em;
+  color: #3b444b;
+  font-family: "Oswald", sans-serif;
+}
+/* line 118, ../sass/index.sass */
+.title-Other .markdown .navbar a {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 122, ../sass/index.sass */
+.title-Other .markdown .navbar a:link {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+/* line 126, ../sass/index.sass */
+.title-Other .markdown .navbar a:hover {
+  text-decoration: inherit;
+  font-family: "Oswald", sans-serif;
+  color: #3b444b;
+}
+
+/* line 144, ../sass/index.sass */
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 2.747em;
 }
 
-/* line 120, ../sass/index.sass */
+/* line 148, ../sass/index.sass */
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
 }
 
-/* line 124, ../sass/index.sass */
+/* line 152, ../sass/index.sass */
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
 }
 
-/* line 128, ../sass/index.sass */
+/* line 156, ../sass/index.sass */
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 132, ../sass/index.sass */
+/* line 160, ../sass/index.sass */
 p {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 135, ../sass/index.sass */
+/* line 163, ../sass/index.sass */
 code {
   font-family: "VT323", monospace;
   font-size: 140%;
