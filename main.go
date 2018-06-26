@@ -18,6 +18,8 @@ func main() {
 	http.HandleFunc("/research", handlers.ResearchHandler)
 	http.HandleFunc("/engineering", handlers.EngineeringHandler)
 	http.HandleFunc("/teaching", handlers.TeachingHandler)
+	http.HandleFunc("/contact", handlers.ContactHandler)
+	http.HandleFunc("/keybase.txt", handlers.KeybaseVerificationHandler)
 
 	http.HandleFunc("/", handlers.IndexHandler)
 
