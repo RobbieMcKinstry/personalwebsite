@@ -42,7 +42,12 @@
   color: #F0F8FF;
 }
 
-/* line 51, ../sass/index.sass */
+/* line 52, ../sass/index.sass */
+.contact h1 {
+  align: center;
+}
+
+/* line 55, ../sass/index.sass */
 .markdown-wrapper {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -52,7 +57,7 @@
   position: relative;
 }
 
-/* line 60, ../sass/index.sass */
+/* line 64, ../sass/index.sass */
 .title-Research .background {
   top: 0;
   left: 0;
@@ -70,7 +75,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 74, ../sass/index.sass */
+/* line 78, ../sass/index.sass */
 .title-Research .markdown {
   top: 1em;
   left: 0;
@@ -90,28 +95,28 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 89, ../sass/index.sass */
+/* line 93, ../sass/index.sass */
 .title-Research .markdown a {
   color: #3b444b;
 }
-/* line 92, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .title-Research .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 96, ../sass/index.sass */
+/* line 100, ../sass/index.sass */
 .title-Research .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 74, ../sass/index.sass */
+  /* line 78, ../sass/index.sass */
   .title-Research .markdown {
     font-size: 90%;
   }
 }
 
-/* line 60, ../sass/index.sass */
+/* line 64, ../sass/index.sass */
 .title-Engineering .background {
   top: 0;
   left: 0;
@@ -129,7 +134,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 74, ../sass/index.sass */
+/* line 78, ../sass/index.sass */
 .title-Engineering .markdown {
   top: 1em;
   left: 0;
@@ -149,28 +154,28 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 89, ../sass/index.sass */
+/* line 93, ../sass/index.sass */
 .title-Engineering .markdown a {
   color: #3b444b;
 }
-/* line 92, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .title-Engineering .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 96, ../sass/index.sass */
+/* line 100, ../sass/index.sass */
 .title-Engineering .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 74, ../sass/index.sass */
+  /* line 78, ../sass/index.sass */
   .title-Engineering .markdown {
     font-size: 90%;
   }
 }
 
-/* line 60, ../sass/index.sass */
+/* line 64, ../sass/index.sass */
 .title-Teaching .background {
   top: 0;
   left: 0;
@@ -188,7 +193,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 74, ../sass/index.sass */
+/* line 78, ../sass/index.sass */
 .title-Teaching .markdown {
   top: 1em;
   left: 0;
@@ -208,57 +213,57 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 89, ../sass/index.sass */
+/* line 93, ../sass/index.sass */
 .title-Teaching .markdown a {
   color: #3b444b;
 }
-/* line 92, ../sass/index.sass */
+/* line 96, ../sass/index.sass */
 .title-Teaching .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 96, ../sass/index.sass */
+/* line 100, ../sass/index.sass */
 .title-Teaching .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 74, ../sass/index.sass */
+  /* line 78, ../sass/index.sass */
   .title-Teaching .markdown {
     font-size: 90%;
   }
 }
 
-/* line 112, ../sass/index.sass */
+/* line 116, ../sass/index.sass */
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 2.747em;
 }
 
-/* line 116, ../sass/index.sass */
+/* line 120, ../sass/index.sass */
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
 }
 
-/* line 120, ../sass/index.sass */
+/* line 124, ../sass/index.sass */
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
 }
 
-/* line 124, ../sass/index.sass */
+/* line 128, ../sass/index.sass */
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 128, ../sass/index.sass */
+/* line 132, ../sass/index.sass */
 p {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 131, ../sass/index.sass */
+/* line 135, ../sass/index.sass */
 code {
   font-family: "VT323", monospace;
   font-size: 140%;
