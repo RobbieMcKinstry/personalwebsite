@@ -48,6 +48,19 @@
 }
 
 /* line 58, ../sass/index.sass */
+.carousel {
+  background-color: #3b444b;
+}
+/* line 60, ../sass/index.sass */
+.carousel img {
+  max-width: 80%;
+  max-height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 67, ../sass/index.sass */
 .markdown-wrapper {
   perspective: 1px;
   transform-style: preserve-3d;
@@ -57,7 +70,7 @@
   position: relative;
 }
 
-/* line 67, ../sass/index.sass */
+/* line 76, ../sass/index.sass */
 .title-Research .background {
   top: 0;
   left: 0;
@@ -75,7 +88,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 81, ../sass/index.sass */
+/* line 90, ../sass/index.sass */
 .title-Research .markdown {
   top: 1em;
   left: 0;
@@ -95,27 +108,27 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 96, ../sass/index.sass */
+/* line 105, ../sass/index.sass */
 .title-Research .markdown a {
   color: #3b444b;
 }
-/* line 99, ../sass/index.sass */
+/* line 108, ../sass/index.sass */
 .title-Research .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 103, ../sass/index.sass */
+/* line 112, ../sass/index.sass */
 .title-Research .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 81, ../sass/index.sass */
+  /* line 90, ../sass/index.sass */
   .title-Research .markdown {
     font-size: 90%;
   }
 }
-/* line 110, ../sass/index.sass */
+/* line 119, ../sass/index.sass */
 .title-Research .markdown .navbar {
   display: flex;
   justify-content: center;
@@ -125,26 +138,26 @@
   color: #3b444b;
   font-family: "Oswald", sans-serif;
 }
-/* line 118, ../sass/index.sass */
+/* line 127, ../sass/index.sass */
 .title-Research .markdown .navbar a {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 122, ../sass/index.sass */
+/* line 131, ../sass/index.sass */
 .title-Research .markdown .navbar a:link {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 126, ../sass/index.sass */
+/* line 135, ../sass/index.sass */
 .title-Research .markdown .navbar a:hover {
-  text-decoration: inherit;
+  text-decoration: underline;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
 
-/* line 67, ../sass/index.sass */
+/* line 76, ../sass/index.sass */
 .title-Engineering .background {
   top: 0;
   left: 0;
@@ -162,7 +175,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 81, ../sass/index.sass */
+/* line 90, ../sass/index.sass */
 .title-Engineering .markdown {
   top: 1em;
   left: 0;
@@ -182,27 +195,27 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 96, ../sass/index.sass */
+/* line 105, ../sass/index.sass */
 .title-Engineering .markdown a {
   color: #3b444b;
 }
-/* line 99, ../sass/index.sass */
+/* line 108, ../sass/index.sass */
 .title-Engineering .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 103, ../sass/index.sass */
+/* line 112, ../sass/index.sass */
 .title-Engineering .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 81, ../sass/index.sass */
+  /* line 90, ../sass/index.sass */
   .title-Engineering .markdown {
     font-size: 90%;
   }
 }
-/* line 110, ../sass/index.sass */
+/* line 119, ../sass/index.sass */
 .title-Engineering .markdown .navbar {
   display: flex;
   justify-content: center;
@@ -212,26 +225,26 @@
   color: #3b444b;
   font-family: "Oswald", sans-serif;
 }
-/* line 118, ../sass/index.sass */
+/* line 127, ../sass/index.sass */
 .title-Engineering .markdown .navbar a {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 122, ../sass/index.sass */
+/* line 131, ../sass/index.sass */
 .title-Engineering .markdown .navbar a:link {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 126, ../sass/index.sass */
+/* line 135, ../sass/index.sass */
 .title-Engineering .markdown .navbar a:hover {
-  text-decoration: inherit;
+  text-decoration: underline;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
 
-/* line 67, ../sass/index.sass */
+/* line 76, ../sass/index.sass */
 .title-Teaching .background {
   top: 0;
   left: 0;
@@ -249,7 +262,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 81, ../sass/index.sass */
+/* line 90, ../sass/index.sass */
 .title-Teaching .markdown {
   top: 1em;
   left: 0;
@@ -269,27 +282,27 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 96, ../sass/index.sass */
+/* line 105, ../sass/index.sass */
 .title-Teaching .markdown a {
   color: #3b444b;
 }
-/* line 99, ../sass/index.sass */
+/* line 108, ../sass/index.sass */
 .title-Teaching .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 103, ../sass/index.sass */
+/* line 112, ../sass/index.sass */
 .title-Teaching .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 81, ../sass/index.sass */
+  /* line 90, ../sass/index.sass */
   .title-Teaching .markdown {
     font-size: 90%;
   }
 }
-/* line 110, ../sass/index.sass */
+/* line 119, ../sass/index.sass */
 .title-Teaching .markdown .navbar {
   display: flex;
   justify-content: center;
@@ -299,26 +312,26 @@
   color: #3b444b;
   font-family: "Oswald", sans-serif;
 }
-/* line 118, ../sass/index.sass */
+/* line 127, ../sass/index.sass */
 .title-Teaching .markdown .navbar a {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 122, ../sass/index.sass */
+/* line 131, ../sass/index.sass */
 .title-Teaching .markdown .navbar a:link {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 126, ../sass/index.sass */
+/* line 135, ../sass/index.sass */
 .title-Teaching .markdown .navbar a:hover {
-  text-decoration: inherit;
+  text-decoration: underline;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
 
-/* line 67, ../sass/index.sass */
+/* line 76, ../sass/index.sass */
 .title-Other .background {
   top: 0;
   left: 0;
@@ -336,7 +349,7 @@
   z-index: -1;
   max-width: 100%;
 }
-/* line 81, ../sass/index.sass */
+/* line 90, ../sass/index.sass */
 .title-Other .markdown {
   top: 1em;
   left: 0;
@@ -356,27 +369,27 @@
   color: #3b444b;
   background-color: #f9f8f2;
 }
-/* line 96, ../sass/index.sass */
+/* line 105, ../sass/index.sass */
 .title-Other .markdown a {
   color: #3b444b;
 }
-/* line 99, ../sass/index.sass */
+/* line 108, ../sass/index.sass */
 .title-Other .markdown a:link {
   text-decoration: underline;
   color: #3b444b;
 }
-/* line 103, ../sass/index.sass */
+/* line 112, ../sass/index.sass */
 .title-Other .markdown a:hover {
   text-decoration: underline wavy #3b444b;
   color: #3b444b;
 }
 @media screen and (max-width: 25em) {
-  /* line 81, ../sass/index.sass */
+  /* line 90, ../sass/index.sass */
   .title-Other .markdown {
     font-size: 90%;
   }
 }
-/* line 110, ../sass/index.sass */
+/* line 119, ../sass/index.sass */
 .title-Other .markdown .navbar {
   display: flex;
   justify-content: center;
@@ -386,55 +399,55 @@
   color: #3b444b;
   font-family: "Oswald", sans-serif;
 }
-/* line 118, ../sass/index.sass */
+/* line 127, ../sass/index.sass */
 .title-Other .markdown .navbar a {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 122, ../sass/index.sass */
+/* line 131, ../sass/index.sass */
 .title-Other .markdown .navbar a:link {
   text-decoration: inherit;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
-/* line 126, ../sass/index.sass */
+/* line 135, ../sass/index.sass */
 .title-Other .markdown .navbar a:hover {
-  text-decoration: inherit;
+  text-decoration: underline;
   font-family: "Oswald", sans-serif;
   color: #3b444b;
 }
 
-/* line 144, ../sass/index.sass */
+/* line 153, ../sass/index.sass */
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 2.747em;
 }
 
-/* line 148, ../sass/index.sass */
+/* line 157, ../sass/index.sass */
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
 }
 
-/* line 152, ../sass/index.sass */
+/* line 161, ../sass/index.sass */
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
 }
 
-/* line 156, ../sass/index.sass */
+/* line 165, ../sass/index.sass */
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 160, ../sass/index.sass */
+/* line 169, ../sass/index.sass */
 p {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 163, ../sass/index.sass */
+/* line 172, ../sass/index.sass */
 code {
   font-family: "VT323", monospace;
   font-size: 140%;
