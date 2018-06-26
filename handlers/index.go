@@ -26,6 +26,10 @@ func ContactHandler(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "contact.tmpl", nil)
 }
 
+func OtherHandler(w http.ResponseWriter, r *http.Request) {
+	RenderMarkdown(w, r, "Other", "other.md")
+}
+
 func KeybaseVerificationHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%s", keybase)
 }

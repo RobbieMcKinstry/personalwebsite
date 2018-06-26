@@ -19,6 +19,7 @@ func main() {
 	http.HandleFunc("/engineering", handlers.EngineeringHandler)
 	http.HandleFunc("/teaching", handlers.TeachingHandler)
 	http.HandleFunc("/contact", handlers.ContactHandler)
+	http.HandleFunc("/other", handlers.OtherHandler)
 	http.HandleFunc("/keybase.txt", handlers.KeybaseVerificationHandler)
 
 	http.HandleFunc("/", handlers.IndexHandler)

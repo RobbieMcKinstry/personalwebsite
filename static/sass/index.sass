@@ -1,10 +1,12 @@
 $header-font: 'Oswald', sans-serif
 $body-font: 'Roboto', sans-serif
 $code-font: 'VT323', monospace
-$soft-black: #3b444b
-$light-white: #F0F8FF
-$white-blue: #d0fcff
-$soft-paper: #f9f8f2
+$soft-black:   #3b444b
+$light-white:  #F0F8FF
+$white-blue:   #d0fcff
+$soft-paper:   #f9f8f2
+$navbar-color: #FFDFC2
+$rich-blue:    #007bff
 
 =fixed-abs-pos($dist-from-top)
   top: $dist-from-top
@@ -37,6 +39,7 @@ $soft-paper: #f9f8f2
       padding-bottom: 2.5%
       padding-left: 1.0%
       padding-right: 1.0%
+
   a
     color: $light-white    
 
@@ -104,6 +107,27 @@ $soft-paper: #f9f8f2
     @media screen and (max-width: 25em)
       font-size: 90%
 
+    .navbar
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      background-color: $navbar-color
+      margin-bottom: 1em
+      color: $soft-black
+      font-family: $header-font
+      a
+        text-decoration: inherit
+        font-family: $header-font
+        color: $soft-black
+      a:link
+        text-decoration: inherit
+        font-family: $header-font
+        color: $soft-black
+      a:hover
+        text-decoration: inherit
+        font-family: $header-font
+        color: $soft-black
+
 .title-Research
   +markdown-document(210%)
 
@@ -112,6 +136,10 @@ $soft-paper: #f9f8f2
 
 .title-Teaching
   +markdown-document(250%)
+
+.title-Other
+  +markdown-document(103%)
+
 
 h1
   font-family: $header-font
