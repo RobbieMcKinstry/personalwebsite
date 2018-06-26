@@ -3,6 +3,7 @@ package handlers
 import (
 	"fmt"
 	"net/http"
+	"path/filepath"
 )
 
 // The IndexHandler points to the root of the application.
@@ -32,6 +33,15 @@ func OtherHandler(w http.ResponseWriter, r *http.Request) {
 
 func KeybaseVerificationHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%s", keybase)
+}
+
+func MemeHandler(w http.ResponseWriter, r *http.Request) {
+	const memePath = "static/images/memes/*"
+	memeFiles, err := filepath.Glob(memePath)
+	if err != nil {
+		w.WriteHeader(500)
+	}
+	renderTemplate(w, "memes.tmpl", memeFiles)
 }
 
 func AboutMeHandler(w http.ResponseWriter, r *http.Request) {
