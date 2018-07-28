@@ -21,6 +21,7 @@ func main() {
 	http.HandleFunc("/contact", handlers.ContactHandler)
 	http.HandleFunc("/other", handlers.OtherHandler)
 	http.HandleFunc("/memes", handlers.MemeHandler)
+	http.Handle("/documents", handlers.NewDigitalOceanHandler())
 	http.HandleFunc("/keybase.txt", handlers.KeybaseVerificationHandler)
 
 	http.HandleFunc("/", handlers.IndexHandler)

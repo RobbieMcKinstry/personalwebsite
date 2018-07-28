@@ -8,7 +8,7 @@ This fall I'm teaching _Algorithmic Thinking_. The class is offered to juniors a
 and sophomores who completed Honors Algebra I with a grade of 93% or above or Honors Algebra
 II with a grade of 88% or above.
 
-At present, the roster of my class is aobut half students with an honors mathematics background
+At present, the roster of my class is about half students with an honors mathematics background
 and half students wihout.
 
 Students will take daily (partially graded) quizzes on advanced applications of 

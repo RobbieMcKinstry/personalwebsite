@@ -11,7 +11,7 @@ I was a software engineering intern at ModCloth on the Internal Tools team.
 I wrote a lot of Go, Python, and bash. I also learned Agile/Scrum, git, vim, HTML/CSS/JS, SQL, Ruby, 
 and Ruby on Rails. After work every night, I went home with a headache and laid in bed 
 exhausted. It was very tiring and stressful. I still enjoyed my job and my coworkers,
-despite starting my on-again/off-again affair with imposture syndrome.
+despite starting my on-again/off-again affair with impostor syndrome.
 
 ### May 2014 - August 2014
 

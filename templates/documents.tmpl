@@ -1,0 +1,12 @@
+{{define "title"}}LaTeX Documents{{end}}
+{{define "content"}}
+<div>
+  {{ range $index, $element := . }}
+    <div>
+      <p>{{$element.Key}}</p>
+      <p>{{$element.LastModified}}</p>
+      <p>{{$element.ContentType}}</p>
+    </div>
+  {{end}}
+</div>
+{{end}}
