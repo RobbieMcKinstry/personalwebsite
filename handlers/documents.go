@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
@@ -38,23 +37,22 @@ func NewDigitalOceanHandler() *DigitalOceanHandler {
 // all LaTeX documents and allows updates of new documents.
 func (handler *DigitalOceanHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
-	if r.Method == http.MethodPost {
-		var username = r.FormValue("username")
-		var password = r.FormValue("password")
-
-		if username != expectedUsername || password != expectedPassword {
-			fmt.Println("Invalid login")
-			w.WriteHeader(http.StatusForbidden)
-			w.Write([]byte(failedHTML))
-		}
-	} else {
+	if r.Method != http.MethodPost {
 		w.WriteHeader(http.StatusForbidden)
-		w.Write([]byte(failedHTML))
+		renderTemplate(w, "failed_login.tmpl", nil)
+		return
+	}
+
+	var username = r.FormValue("username")
+	var password = r.FormValue("password")
+
+	if username != expectedUsername || password != expectedPassword {
+		w.WriteHeader(http.StatusForbidden)
+		renderTemplate(w, "failed_login.tmpl", nil)
 		return
 	}
 
 	// Otherwise, we can fetch the list of documents from DigitalOcean
-	// And then
 	doneCh := make(chan struct{})
 	defer close(doneCh)
 	// Recursively list all objects in 'mytestbucket'
@@ -72,9 +70,3 @@ var digitalOceanAccessKey = "YH37572NVSDWDCG4IELC"
 var digitalOceanAccessSecret = "ttCwqhbOVxAek7avRO4JRBPWweSGrGJ7amw31V8uHhY"
 var digitaloceanEndpoint = "nyc3.digitaloceanspaces.com"
 var spaceName = "latex-documents"
-
-var failedHTML = `<html><body><form method="post" action="/documents">
-   <input type="text" name="username" required>
-   <input type="password" name="password" required>
-   <input type="submit" value="Login">
- </form></body></html>`
