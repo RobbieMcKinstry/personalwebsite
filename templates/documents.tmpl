@@ -2,10 +2,12 @@
 {{define "content"}}
 <div>
   {{ range $index, $element := . }}
-    <div>
-      <p>{{$element.Key}}</p>
-      <p>{{$element.LastModified}}</p>
-      <p>{{$element.ContentType}}</p>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{$element.Key}}</h5>
+        <p>{{$element.LastModified}}</p>
+        <p>{{$element.ContentType}}</p>
+      </div>
     </div>
   {{end}}
 </div>

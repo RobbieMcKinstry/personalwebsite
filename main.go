@@ -7,14 +7,16 @@ import (
 	"os"
 	"os/signal"
 
+	"github.com/RobbieMcKinstry/personal-website/database"
 	"github.com/RobbieMcKinstry/personal-website/handlers"
 )
 
 const PORT = 8080
 
 func main() {
-	http.Handle("/static/", handlers.Static())
+	_ = database.NewDB()
 
+	http.Handle("/static/", handlers.Static())
 	http.HandleFunc("/research", handlers.ResearchHandler)
 	http.HandleFunc("/engineering", handlers.EngineeringHandler)
 	http.HandleFunc("/teaching", handlers.TeachingHandler)
