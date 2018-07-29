@@ -30,6 +30,16 @@ func NewDB() *Handle {
 	return res
 }
 
+func (db *Handle) Rosters() []string {
+	// Query the db and get the list of rosters.
+	// TODO upgrade
+	var res []string
+	for key := range Roster {
+		res = append(res, key)
+	}
+	return res
+}
+
 func (db *Handle) SetupTables() {
 	tx, err := db.Begin()
 	defer tx.Commit()

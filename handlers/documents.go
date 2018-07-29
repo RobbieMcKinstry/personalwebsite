@@ -5,6 +5,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/RobbieMcKinstry/personal-website/database"
+
 	minio "github.com/minio/minio-go"
 )
 
@@ -14,6 +16,12 @@ type DigitalOceanHandler struct {
 	AccessSecret string
 	endpoint     string
 	spacename    string
+	db           *database.Handle
+}
+
+type documentPageVariables struct {
+	Documents []minio.ObjectInfo
+	Rosters   []string
 }
 
 func NewDigitalOceanHandler() *DigitalOceanHandler {
@@ -22,6 +30,7 @@ func NewDigitalOceanHandler() *DigitalOceanHandler {
 		AccessSecret: digitalOceanAccessSecret,
 		endpoint:     digitaloceanEndpoint,
 		spacename:    spaceName,
+		db:           database.NewDB(),
 	}
 	var ssl = true
 	client, err := minio.New(res.endpoint, res.AccessToken, res.AccessSecret, ssl)
@@ -66,16 +75,16 @@ func (handler *DigitalOceanHandler) ServeHTTP(w http.ResponseWriter, r *http.Req
 
 	// Otherwise, we can fetch the list of documents from DigitalOcean
 	doneCh := make(chan struct{})
+	var vars documentPageVariables
 	defer close(doneCh)
 	// Recursively list all objects in 'mytestbucket'
 	recursive := true
-	var documents = []minio.ObjectInfo{}
-	for message := range handler.client.ListObjectsV2(handler.spacename, "", recursive, doneCh) {
-		fmt.Printf("Document: %v\n", message.Key)
-		documents = append(documents, message)
+	for doc := range handler.client.ListObjectsV2(handler.spacename, "", recursive, doneCh) {
+		vars.Documents = append(vars.Documents, doc)
 	}
+	vars.Rosters = handler.db.Rosters()
 
-	renderTemplate(w, "documents.tmpl", documents)
+	renderTemplate(w, "documents.tmpl", vars)
 }
 
 var expectedUsername = "robbiemckinstry"

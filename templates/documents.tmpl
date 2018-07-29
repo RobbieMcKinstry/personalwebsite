@@ -1,12 +1,26 @@
 {{define "title"}}LaTeX Documents{{end}}
 {{define "content"}}
 <div>
-  {{ range $index, $element := . }}
+  {{ range $index, $element := .Documents }}
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">{{$element.Key}}</h5>
         <p>{{$element.LastModified}}</p>
         <p>{{$element.ContentType}}</p>
+        <div class="dropdown">
+          <button 
+            class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+          >
+            Roster
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            {{ range $index, $element := $.Rosters }}
+              <a class="dropdown-item" href="#">{{$element}}</a>
+            {{end}}
+          </div>
+        </div>
       </div>
     </div>
   {{end}}
