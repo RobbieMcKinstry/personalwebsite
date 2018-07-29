@@ -14,6 +14,7 @@ import (
 const PORT = 8080
 
 func main() {
+
 	_ = database.NewDB()
 
 	http.Handle("/static/", handlers.Static())

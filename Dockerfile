@@ -10,5 +10,8 @@ FROM alpine
 WORKDIR /app
 COPY --from=build-env /bin/server /app/
 COPY . /app/
+
+RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
+
 EXPOSE 8080
 ENTRYPOINT ["./server"]

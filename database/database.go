@@ -54,9 +54,7 @@ func (db *Handle) SetupTables() {
 		last  VARCHAR(200) NOT NULL,
 		grade INT(11) NOT NULL,
 		session VARCHAR(200),
-		PRIMARY KEY (first, last),
-		FOREIGN KEY (session)
-        REFERENCES roster(session)
+		PRIMARY KEY (first, last)
 	);`)
 	check(err)
 	_, err = stmt.Exec()
@@ -71,7 +69,7 @@ func (db *Handle) SetupTables() {
 			stmt, err := tx.Prepare(`REPLACE INTO student
 			(first, last, grade, session)
 			VALUES
-			(?, ? , ?, ?);`)
+			(?, ?, ?, ?);`)
 			check(err)
 			_, err = stmt.Exec(student.first, student.last, student.grade, roster)
 			check(err)
@@ -85,7 +83,7 @@ func check(err error) {
 	}
 }
 
-var ipAddr = "209.97.157.88"
+var ipAddr = "209.97.153.160"
 
 // var username = "root"
 // var password = "RpR[+6ko?bngGy&P&Lh7CxFFDnBFyfdaLmh*CaMNkQeVKftPrD2RCX2UuUo9hDA3"

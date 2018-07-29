@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -37,6 +38,17 @@ func NewDigitalOceanHandler() *DigitalOceanHandler {
 // all LaTeX documents and allows updates of new documents.
 func (handler *DigitalOceanHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
+	ok, err := handler.client.BucketExists(handler.spacename)
+	if err != nil {
+		fmt.Println("Error found when checking for bucket")
+		fmt.Println(err)
+		return
+	}
+	if !ok {
+		fmt.Println("Bucket does not exist.")
+		return
+	}
+
 	if r.Method != http.MethodPost {
 		w.WriteHeader(http.StatusForbidden)
 		renderTemplate(w, "failed_login.tmpl", nil)
@@ -59,8 +71,10 @@ func (handler *DigitalOceanHandler) ServeHTTP(w http.ResponseWriter, r *http.Req
 	recursive := true
 	var documents = []minio.ObjectInfo{}
 	for message := range handler.client.ListObjectsV2(handler.spacename, "", recursive, doneCh) {
+		fmt.Printf("Document: %v\n", message.Key)
 		documents = append(documents, message)
 	}
+
 	renderTemplate(w, "documents.tmpl", documents)
 }
 
