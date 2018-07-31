@@ -58,16 +58,17 @@ func (handler *DigitalOceanHandler) ServeHTTP(w http.ResponseWriter, r *http.Req
 		return
 	}
 
-	if r.Method != http.MethodPost {
+	if r.Method != http.MethodGet {
+		fmt.Println("Request not a GET")
 		w.WriteHeader(http.StatusForbidden)
 		renderTemplate(w, "failed_login.tmpl", nil)
 		return
 	}
 
 	var username = r.FormValue("username")
-	var password = r.FormValue("password")
-
+	var password = r.FormValue("password") //
 	if username != expectedUsername || password != expectedPassword {
+		fmt.Println("Username/password not matching")
 		w.WriteHeader(http.StatusForbidden)
 		renderTemplate(w, "failed_login.tmpl", nil)
 		return
