@@ -81,7 +81,7 @@ func (db *Handle) SetupTables() {
 			VALUES
 			(?, ?, ?, ?);`)
 			check(err)
-			_, err = stmt.Exec(student.first, student.last, student.grade, roster)
+			_, err = stmt.Exec(student.First, student.Last, student.grade, roster)
 			check(err)
 		}
 	}

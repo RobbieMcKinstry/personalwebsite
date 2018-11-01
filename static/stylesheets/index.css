@@ -418,37 +418,50 @@
   color: #3b444b;
 }
 
-/* line 153, ../sass/index.sass */
+/* line 152, ../sass/index.sass */
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 2.747em;
 }
 
-/* line 157, ../sass/index.sass */
+/* line 156, ../sass/index.sass */
 h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2em;
 }
 
-/* line 161, ../sass/index.sass */
+/* line 160, ../sass/index.sass */
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
 }
 
-/* line 165, ../sass/index.sass */
+/* line 164, ../sass/index.sass */
 h4 {
   font-family: "Oswald", sans-serif;
   font-size: 0.9em;
 }
 
-/* line 169, ../sass/index.sass */
+/* line 168, ../sass/index.sass */
 p {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 172, ../sass/index.sass */
+/* line 171, ../sass/index.sass */
 code {
   font-family: "VT323", monospace;
   font-size: 140%;
+}
+
+/* line 176, ../sass/index.sass */
+.markdown h1 {
+  text-align: center;
+}
+/* line 178, ../sass/index.sass */
+.markdown h2 {
+  text-align: center;
+}
+/* line 180, ../sass/index.sass */
+.markdown h3 {
+  text-align: center;
 }

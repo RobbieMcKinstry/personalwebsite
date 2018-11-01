@@ -31,6 +31,10 @@ func OtherHandler(w http.ResponseWriter, r *http.Request) {
 	RenderMarkdown(w, r, "Other", "other.md")
 }
 
+func RecruitingHandler(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "recruiting.tmpl", nil)
+}
+
 func KeybaseVerificationHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%s", keybase)
 }

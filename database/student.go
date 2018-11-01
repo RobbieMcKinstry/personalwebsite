@@ -1,104 +1,133 @@
 package database
 
 type Student struct {
-	first string
-	last  string
-	grade uint
+	First      string
+	Last       string
+	grade      uint
+	QuizGrades []*Score
+	StudentID  string
+}
+
+type Score struct {
+	Date   string
+	Score  float64
+	Total  float64
+	Number int
 }
 
 var Roster = map[string][]Student{
 	"fall 2018": []Student{{
-		first: "Dominic",
-		last:  "Augello",
-		grade: 12,
+		First:     "Dominic",
+		Last:      "Augello",
+		grade:     12,
+		StudentID: "20192606",
 	}, {
-		first: "Renne",
-		last:  "Cabacungan",
-		grade: 12,
+		First:     "Renne",
+		Last:      "Cabacungan",
+		grade:     12,
+		StudentID: "20192701",
 	}, {
-		first: "Zachary",
-		last:  "Evens",
-		grade: 11,
+		First:     "William",
+		Last:      "Fello",
+		grade:     11,
+		StudentID: "20201960",
 	}, {
-		first: "William",
-		last:  "Fello",
-		grade: 11,
+		First:     "Wylie",
+		Last:      "Haddad",
+		grade:     12,
+		StudentID: "20192961",
 	}, {
-		first: "Luke",
-		last:  "Krasinski",
-		grade: 12,
+		First:     "Fantini",
+		Last:      "Mike",
+		grade:     12,
+		StudentID: "20192886",
 	}, {
-		first: "Jonathan",
-		last:  "Krystopolski-Czernics",
-		grade: 12,
+		First:     "Alan",
+		Last:      "Kraning",
+		grade:     12,
+		StudentID: "20193076",
 	}, {
-		first: "Jack",
-		last:  "McAllister",
-		grade: 11,
+		First:     "Luke",
+		Last:      "Krasinski",
+		grade:     12,
+		StudentID: "20193081",
 	}, {
-		first: "Neil",
-		last:  "Shipley",
-		grade: 12,
+		First:     "Jonathan",
+		Last:      "Krystopolski-Czernics",
+		grade:     12,
+		StudentID: "20193086",
 	}, {
-		first: "John",
-		last:  "Speers",
-		grade: 11,
+		First:     "Neil",
+		Last:      "Shipley",
+		grade:     12,
+		StudentID: "20193446",
 	}, {
-		first: "Liam",
-		last:  "Sullivan",
-		grade: 12,
+		First:     "Connor",
+		Last:      "Sweeney",
+		grade:     12,
+		StudentID: "20193536",
+	}, {
+		First:     "Jack",
+		Last:      "Rooney",
+		grade:     12,
+		StudentID: "20193391",
+	}, {
+		First:     "Liam",
+		Last:      "Sullivan",
+		grade:     12,
+		StudentID: "20193521",
 	}},
 	"spring 2019": []Student{{
-		first: "Jacob",
-		last:  "Billisits",
+		First: "Jacob",
+		Last:  "Billisits",
 		grade: 12,
 	}, {
-		first: "Luke",
-		last:  "Crist",
+		First: "Luke",
+		Last:  "Crist",
 		grade: 10,
 	}, {
-		first: "Ryan",
-		last:  "Haver",
+		First: "Ryan",
+		Last:  "Haver",
 		grade: 11,
 	}, {
-		first: "Christian",
-		last:  "Farls",
+		First: "Christian",
+		Last:  "Farls",
 		grade: 10,
 	}, {
-		first: "Thomas",
-		last:  "Kujawinski",
+		First: "Thomas",
+		Last:  "Kujawinski",
 		grade: 11,
 	}, {
-		first: "Simon",
-		last:  "Herbert",
+		First: "Simon",
+		Last:  "Herbert",
 		grade: 12,
 	}, {
-		first: "Timothy",
-		last:  "McClelland",
+		First: "Timothy",
+		Last:  "McClelland",
 		grade: 12,
 	}, {
-		first: "Sykai",
-		last:  "Napper",
+		First: "Sykai",
+		Last:  "Napper",
 		grade: 10,
 	}, {
-		first: "Owen",
-		last:  "O'Malley",
+		First: "Owen",
+		Last:  "O'Malley",
 		grade: 10,
 	}, {
-		first: "Michael",
-		last:  "Pistolesi",
+		First: "Michael",
+		Last:  "Pistolesi",
 		grade: 11,
 	}, {
-		first: "Dominic",
-		last:  "Polsinelli",
+		First: "Dominic",
+		Last:  "Polsinelli",
 		grade: 11,
 	}, {
-		first: "Connor",
-		last:  "Sweeney",
-		grade: 12,
+		First: "Zachary",
+		Last:  "Evens",
+		grade: 11,
 	}, {
-		first: "Richard",
-		last:  "Tillman",
+		First: "Richard",
+		Last:  "Tillman",
 		grade: 12,
 	}},
 }

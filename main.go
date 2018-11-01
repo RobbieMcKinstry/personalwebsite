@@ -7,7 +7,6 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/RobbieMcKinstry/personal-website/database"
 	"github.com/RobbieMcKinstry/personal-website/handlers"
 )
 
@@ -15,7 +14,7 @@ const PORT = 8080
 
 func main() {
 
-	_ = database.NewDB()
+	// _ = database.NewDB()
 
 	http.Handle("/static/", handlers.Static())
 	http.HandleFunc("/research", handlers.ResearchHandler)
@@ -24,7 +23,9 @@ func main() {
 	http.HandleFunc("/contact", handlers.ContactHandler)
 	http.HandleFunc("/other", handlers.OtherHandler)
 	http.HandleFunc("/memes", handlers.MemeHandler)
-	http.Handle("/documents", handlers.NewDigitalOceanHandler())
+	http.HandleFunc("/recruiting", handlers.RecruitingHandler)
+	http.Handle("/quiz/", handlers.QuizHandler())
+	// http.Handle("/documents", handlers.NewDigitalOceanHandler())
 	http.HandleFunc("/keybase.txt", handlers.KeybaseVerificationHandler)
 
 	http.HandleFunc("/", handlers.IndexHandler)

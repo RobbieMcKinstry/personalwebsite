@@ -46,7 +46,6 @@ func init() {
 
 		allTemplates[fileName] = res
 	}
-
 }
 
 func renderTemplate(w http.ResponseWriter, name string, data interface{}) {
