@@ -452,3 +452,8 @@ code {
   font-family: "VT323", monospace;
   font-size: 140%;
 }
+
+/* line 176, ../sass/index.sass */
+.meme {
+  padding: 25px;
+}

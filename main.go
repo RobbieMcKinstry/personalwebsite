@@ -30,7 +30,7 @@ func main() {
 }
 
 func launchServer() {
-	fmt.Printf("Server on port %d\n", PORT)
+	fmt.Printf("Server on port http://localhost:%d\n", PORT)
 	port := fmt.Sprintf(":%d", PORT)
 	go func() {
 		log.Fatal(http.ListenAndServe(port, nil))
