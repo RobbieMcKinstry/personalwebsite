@@ -23,7 +23,7 @@
     "node": "8"
   },
   "dependencies": {
-    "ghost": "^2.1.3"
+    "ghost": "^3.10.0"
   },
   "now": {
     "alias": "blog.robbiemckinstry.tech",
